@@ -1,0 +1,2215 @@
+[ 2017-07-23T08:39:26+08:00 ] 222.209.151.207 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0003s ]
+
+[ 2017-07-23T08:39:26+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-07-23T08:39:27+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: UPDATE `longhai_member` SET `m_nickname`='美甲～何老师',`m_avatarurl`='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJ4iat1Owv78aWqRMMH2Z5tljqBrondvkkUf1vPr27ComSG8E0g2zozdFUqWO4PHUICSg0fViajDrPg/0' WHERE `m_id` = 13 [ RunTime:0.0002s ]
+
+[ 2017-07-23T08:39:41+08:00 ] 222.209.151.207 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 13 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-07-23T08:39:41+08:00 ] 222.209.151.207 /index.php/Home//Api/getVideoDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0006s ]
+SQL: UPDATE `longhai_video` SET `v_views`=v_views+1 WHERE `v_id` = 17 [ RunTime:0.0002s ]
+SQL: SELECT `v_id`,`v_title`,`v_pic`,`v_video`,`v_views`,`l_pic`,`l_name`,`vt_id` FROM `longhai_video` left JOIN longhai_video_type on longhai_video.v_type_id = longhai_video_type.vt_id left JOIN longhai_lecturer on longhai_video.v_lecturer_id = longhai_lecturer.l_id  WHERE `v_id` = '17' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_type_id` = 1 AND `v_id` <> '17' ORDER BY v_id desc LIMIT 6   [ RunTime:0.0002s ]
+
+[ 2017-07-23T08:50:34+08:00 ] 222.209.151.207 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0004s ]
+
+[ 2017-07-23T08:50:34+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000126s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:35+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-07-23T08:50:36+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:37+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000153s ]
+
+[ 2017-07-23T08:50:37+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:38+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+
+[ 2017-07-23T08:50:39+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:39+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000152s ]
+
+[ 2017-07-23T08:50:40+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:41+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+
+[ 2017-07-23T08:50:41+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:42+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-07-23T08:50:42+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:43+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-07-23T08:50:44+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000135s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:44+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000191s ]
+
+[ 2017-07-23T08:50:45+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:45+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-07-23T08:50:46+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:46+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000173s ]
+
+[ 2017-07-23T08:50:47+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:48+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+
+[ 2017-07-23T08:50:48+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:49+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000163s ]
+
+[ 2017-07-23T08:50:49+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:50+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-07-23T08:50:51+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000141s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:51+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+
+[ 2017-07-23T08:50:52+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:52+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-07-23T08:50:53+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000163s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:53+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+
+[ 2017-07-23T08:50:54+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:54+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000155s ]
+
+[ 2017-07-23T08:50:55+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:56+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-07-23T08:50:56+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:57+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000138s ]
+
+[ 2017-07-23T08:50:58+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:58+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+
+[ 2017-07-23T08:50:59+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:50:59+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000162s ]
+
+[ 2017-07-23T08:51:00+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:00+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-07-23T08:51:01+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:01+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-07-23T08:51:02+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000120s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:02+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+
+[ 2017-07-23T08:51:03+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000141s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:03+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-07-23T08:51:04+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000162s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:04+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-07-23T08:51:05+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T08:51:05+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000144s ]
+
+[ 2017-07-23T08:51:06+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000117s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:06+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-07-23T08:51:07+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:07+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+
+[ 2017-07-23T08:51:08+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:08+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+
+[ 2017-07-23T08:51:09+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:09+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+
+[ 2017-07-23T08:51:10+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000117s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:11+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-07-23T08:51:11+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:12+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000138s ]
+
+[ 2017-07-23T08:51:13+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:13+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000160s ]
+
+[ 2017-07-23T08:51:14+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:14+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000152s ]
+
+[ 2017-07-23T08:51:15+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:15+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000151s ]
+
+[ 2017-07-23T08:51:16+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:16+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-07-23T08:51:17+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:17+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000143s ]
+
+[ 2017-07-23T08:51:18+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000163s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.2347s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T08:51:19+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+
+[ 2017-07-23T08:51:19+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:20+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000154s ]
+
+[ 2017-07-23T08:51:21+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000189s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:21+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000193s ]
+
+[ 2017-07-23T08:51:22+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:22+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-07-23T08:51:23+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T08:51:24+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+
+[ 2017-07-23T08:51:24+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T08:51:25+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000141s ]
+
+[ 2017-07-23T08:51:25+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:26+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-07-23T08:51:26+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:27+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+
+[ 2017-07-23T08:51:28+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000136s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:28+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000143s ]
+
+[ 2017-07-23T08:51:29+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:29+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-07-23T08:51:30+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:30+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-07-23T08:51:31+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:31+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-07-23T08:51:32+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T08:51:32+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+
+[ 2017-07-23T08:51:33+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:34+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000168s ]
+
+[ 2017-07-23T08:51:34+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:35+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-07-23T08:51:35+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:36+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+
+[ 2017-07-23T08:51:36+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:37+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+
+[ 2017-07-23T08:51:37+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:38+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000148s ]
+
+[ 2017-07-23T08:51:39+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:39+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+
+[ 2017-07-23T08:51:40+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000162s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:41+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-07-23T08:51:41+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:42+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000168s ]
+
+[ 2017-07-23T08:51:42+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:43+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+
+[ 2017-07-23T08:51:44+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000117s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:44+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-07-23T08:51:45+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:45+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+
+[ 2017-07-23T08:51:46+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:47+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000191s ]
+
+[ 2017-07-23T08:51:47+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:48+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-07-23T08:51:48+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:49+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000149s ]
+
+[ 2017-07-23T08:51:50+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:50+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000164s ]
+
+[ 2017-07-23T08:51:51+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000139s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:51+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-07-23T08:51:52+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:52+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000154s ]
+
+[ 2017-07-23T08:51:53+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:53+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-07-23T08:51:54+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:54+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000168s ]
+
+[ 2017-07-23T08:51:55+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000140s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:56+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-07-23T08:51:56+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:57+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000138s ]
+
+[ 2017-07-23T08:51:57+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000168s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T08:51:58+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000176s ]
+
+[ 2017-07-23T08:51:58+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0332s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:51:59+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+
+[ 2017-07-23T08:59:45+08:00 ] 222.209.151.207 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2017-07-23T08:59:49+08:00 ] 222.209.151.207 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000179s ]
+
+[ 2017-07-23T09:00:02+08:00 ] 222.209.151.207 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-07-23T09:00:14+08:00 ] 222.209.151.207 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000137s ]
+
+[ 2017-07-23T09:00:36+08:00 ] 222.209.151.207 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2017-07-23T09:00:40+08:00 ] 222.209.151.207 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000138s ]
+
+[ 2017-07-23T09:01:23+08:00 ] 222.209.151.207 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000160s ]
+
+[ 2017-07-23T09:03:10+08:00 ] 222.209.151.207 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2017-07-23T09:03:11+08:00 ] 222.209.151.207 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000165s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0HxyNt6UFkynrnK8drX6TCs' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T09:03:13+08:00 ] 222.209.151.207 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0012s ]
+SQL: UPDATE `longhai_member` SET `m_nickname`='美甲～何老师',`m_avatarurl`='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJ4iat1Owv78aWqRMMH2Z5tljqBrondvkkUf1vPr27ComSG8E0g2zozdFUqWO4PHUICSg0fViajDrPg/0' WHERE `m_id` = 13 [ RunTime:0.0003s ]
+
+[ 2017-07-23T09:13:59+08:00 ] 222.209.151.207 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T09:14:00+08:00 ] 222.209.151.207 /index.php/Home//Api/getVideoDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0005s ]
+SQL: UPDATE `longhai_video` SET `v_views`=v_views+1 WHERE `v_id` = 17 [ RunTime:0.0003s ]
+SQL: SELECT `v_id`,`v_title`,`v_pic`,`v_video`,`v_views`,`l_pic`,`l_name`,`vt_id` FROM `longhai_video` left JOIN longhai_video_type on longhai_video.v_type_id = longhai_video_type.vt_id left JOIN longhai_lecturer on longhai_video.v_lecturer_id = longhai_lecturer.l_id  WHERE `v_id` = '17' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_type_id` = 1 AND `v_id` <> '17' ORDER BY v_id desc LIMIT 6   [ RunTime:0.0003s ]
+
+[ 2017-07-23T09:37:31+08:00 ] 222.209.151.207 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T09:37:31+08:00 ] 222.209.151.207 /index.php/Home//Api/getVideoDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0007s ]
+SQL: UPDATE `longhai_video` SET `v_views`=v_views+1 WHERE `v_id` = 23 [ RunTime:0.0114s ]
+SQL: SELECT `v_id`,`v_title`,`v_pic`,`v_video`,`v_views`,`l_pic`,`l_name`,`vt_id` FROM `longhai_video` left JOIN longhai_video_type on longhai_video.v_type_id = longhai_video_type.vt_id left JOIN longhai_lecturer on longhai_video.v_lecturer_id = longhai_lecturer.l_id  WHERE `v_id` = '23' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_type_id` = 1 AND `v_id` <> '23' ORDER BY v_id desc LIMIT 6   [ RunTime:0.0007s ]
+
+[ 2017-07-23T09:54:26+08:00 ] 222.209.151.207 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 13 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T09:54:26+08:00 ] 222.209.151.207 /index.php/Home//Api/getVideoDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000194s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 13 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0008s ]
+SQL: UPDATE `longhai_video` SET `v_views`=v_views+1 WHERE `v_id` = 18 [ RunTime:0.0003s ]
+SQL: SELECT `v_id`,`v_title`,`v_pic`,`v_video`,`v_views`,`l_pic`,`l_name`,`vt_id` FROM `longhai_video` left JOIN longhai_video_type on longhai_video.v_type_id = longhai_video_type.vt_id left JOIN longhai_lecturer on longhai_video.v_lecturer_id = longhai_lecturer.l_id  WHERE `v_id` = '18' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_type_id` = 1 AND `v_id` <> '18' ORDER BY v_id desc LIMIT 6   [ RunTime:0.0003s ]
+
+[ 2017-07-23T10:00:27+08:00 ] 1.82.229.203 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000145s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0003s ]
+
+[ 2017-07-23T10:00:28+08:00 ] 1.82.229.203 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0AskXNNK5onUE2C1xQTXJQs' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T10:00:31+08:00 ] 1.82.229.203 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: UPDATE `longhai_member` SET `m_nickname`='范小波',`m_avatarurl`='https://wx.qlogo.cn/mmopen/vi_32/27pgYZLmuM21VBpJ6t2JROcrJYDtxgZfVxXiaz0T5QBk95VSlDanOTPxcyIll3eav5zVVz3cEzL3Dh6zticesoZw/0' WHERE `m_id` = 5 [ RunTime:0.0003s ]
+
+[ 2017-07-23T12:44:58+08:00 ] 182.129.4.78 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000126s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2017-07-23T12:44:58+08:00 ] 182.129.4.78 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0JVgp99o3sjMIqy6rCFDDcM' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T12:44:59+08:00 ] 182.129.4.78 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000131s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: UPDATE `longhai_member` SET `m_nickname`='A伯爵.美甲美睫纹绣小纹身培训',`m_avatarurl`='https://wx.qlogo.cn/mmopen/vi_32/z4hFFGreQKclOM0iaPiaDaqXhxIibNmwtDA2Q74e75SF51u2ib3UQtIUIuicKNfKhYsQN92jmLACTvSZPu4IgCiaZfDA/0' WHERE `m_id` = 46 [ RunTime:0.0002s ]
+
+[ 2017-07-23T12:44:59+08:00 ] 182.129.4.78 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 46 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T12:44:59+08:00 ] 182.129.4.78 /index.php/Home//Api/getVideoDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 46 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0006s ]
+SQL: UPDATE `longhai_video` SET `v_views`=v_views+1 WHERE `v_id` = 25 [ RunTime:0.0003s ]
+SQL: SELECT `v_id`,`v_title`,`v_pic`,`v_video`,`v_views`,`l_pic`,`l_name`,`vt_id` FROM `longhai_video` left JOIN longhai_video_type on longhai_video.v_type_id = longhai_video_type.vt_id left JOIN longhai_lecturer on longhai_video.v_lecturer_id = longhai_lecturer.l_id  WHERE `v_id` = '25' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_type_id` = 1 AND `v_id` <> '25' ORDER BY v_id desc LIMIT 6   [ RunTime:0.0003s ]
+
+[ 2017-07-23T13:23:05+08:00 ] 175.168.135.232 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000193s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0003s ]
+
+[ 2017-07-23T13:23:09+08:00 ] 175.168.135.232 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0Mxl3F3Q1GP50hxSPNIINIQ' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-07-23T13:23:09+08:00 ] 175.168.135.232 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-07-23T13:23:14+08:00 ] 175.168.135.232 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-07-23T13:23:14+08:00 ] 175.168.135.232 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000139s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0Mxl3F3Q1GP50hxSPNIINIQ' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T13:23:15+08:00 ] 175.168.135.232 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0Mxl3F3Q1GP50hxSPNIINIQ' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T13:23:16+08:00 ] 175.168.135.232 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000170s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0011s ]
+SQL: UPDATE `longhai_member` SET `m_nickname`='六角铃铛',`m_avatarurl`='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKiaNFGYzvsWCpMtAjRZwephjeC27gibRnI7eTS9XzvmsXM3ic9Tia4CcVkKn0fvJS6g5VQszy0ib1et9Q/0' WHERE `m_id` = 65 [ RunTime:0.0003s ]
+
+[ 2017-07-23T13:23:18+08:00 ] 175.168.135.232 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: UPDATE `longhai_member` SET `m_nickname`='六角铃铛',`m_avatarurl`='https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKiaNFGYzvsWCpMtAjRZwephjeC27gibRnI7eTS9XzvmsXM3ic9Tia4CcVkKn0fvJS6g5VQszy0ib1et9Q/0' WHERE `m_id` = 65 [ RunTime:0.0002s ]
+
+[ 2017-07-23T13:23:20+08:00 ] 175.168.135.232 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2017-07-23T13:23:51+08:00 ] 175.168.135.232 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 65 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-07-23T13:24:11+08:00 ] 175.168.135.232 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 65 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T13:45:51+08:00 ] 171.221.149.228 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2017-07-23T13:45:51+08:00 ] 171.221.149.228 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0PURpgHj1iIGbvQLIunuDfw' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-07-23T13:45:51+08:00 ] 171.221.149.228 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: UPDATE `longhai_member` SET `m_nickname`='Katherine',`m_avatarurl`='https://wx.qlogo.cn/mmopen/vi_32/BfwsrYQVhMRxm8W7VCTWUsQ1vBXSoLcvlgPib22DENlnEONziaTLp3T8oKYvibicjg3pelo7zCnfVCVkvP6SQTxwRQ/0' WHERE `m_id` = 4 [ RunTime:0.0002s ]
+
+[ 2017-07-23T13:45:54+08:00 ] 171.221.149.228 /index.php/Home//Index/getAbout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `longhai_about` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_about` WHERE `a_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T14:28:52+08:00 ] 118.250.189.96 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2017-07-23T14:28:53+08:00 ] 118.250.189.96 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0FQwsxe4nnT3DeLZHboUvdM' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-07-23T14:28:54+08:00 ] 118.250.189.96 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: UPDATE `longhai_member` SET `m_nickname`='   晴子 ',`m_avatarurl`='https://wx.qlogo.cn/mmopen/vi_32/JZC4wT8hPVZrNibHw7l5sseCoTWCaibOZ57ySFcWrkPvD6mhBPkpF1hicibia9hYnt1wx6BUxtAKAOgIaudPCUFlNtA/0' WHERE `m_id` = 49 [ RunTime:0.0003s ]
+
+[ 2017-07-23T14:29:11+08:00 ] 118.250.189.96 /index.php/Home//Index/getAbout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `longhai_about` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_about` WHERE `a_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T14:29:45+08:00 ] 118.250.189.96 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 49 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-07-23T14:29:45+08:00 ] 118.250.189.96 /index.php/Home//Api/getVideoDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 49 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0007s ]
+SQL: UPDATE `longhai_video` SET `v_views`=v_views+1 WHERE `v_id` = 24 [ RunTime:0.0003s ]
+SQL: SELECT `v_id`,`v_title`,`v_pic`,`v_video`,`v_views`,`l_pic`,`l_name`,`vt_id` FROM `longhai_video` left JOIN longhai_video_type on longhai_video.v_type_id = longhai_video_type.vt_id left JOIN longhai_lecturer on longhai_video.v_lecturer_id = longhai_lecturer.l_id  WHERE `v_id` = '24' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_type_id` = 2 AND `v_id` <> '24' ORDER BY v_id desc LIMIT 6   [ RunTime:0.0003s ]
+
+[ 2017-07-23T15:00:23+08:00 ] 171.221.149.228 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0004s ]
+
+[ 2017-07-23T15:00:23+08:00 ] 171.221.149.228 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000160s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0AskXNNK5onUE2C1xQTXJQs' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T15:00:24+08:00 ] 171.221.149.228 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: UPDATE `longhai_member` SET `m_nickname`='范小波',`m_avatarurl`='https://wx.qlogo.cn/mmopen/vi_32/27pgYZLmuM21VBpJ6t2JROcrJYDtxgZfVxXiaz0T5QBk95VSlDanOTPxcyIll3eav5zVVz3cEzL3Dh6zticesoZw/0' WHERE `m_id` = 5 [ RunTime:0.0003s ]
+
+[ 2017-07-23T15:00:26+08:00 ] 171.221.149.228 /index.php/Home//Api/getVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 AND `v_type_id` = 1 ORDER BY v_id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `longhai_video` WHERE `v_del` = 0 AND `v_type_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T15:00:26+08:00 ] 171.221.149.228 /index.php/Home//Index/getAbout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+SQL: SHOW COLUMNS FROM `longhai_about` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_about` WHERE `a_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T15:00:27+08:00 ] 171.221.149.228 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000161s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T15:00:29+08:00 ] 171.221.149.228 /index.php/Home//Api/getVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000159s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 AND `v_type_id` = 3 ORDER BY v_id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `longhai_video` WHERE `v_del` = 0 AND `v_type_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T15:00:30+08:00 ] 171.221.149.228 /index.php/Home//Api/getVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000140s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 AND `v_type_id` = 2 ORDER BY v_id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `longhai_video` WHERE `v_del` = 0 AND `v_type_id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T15:00:30+08:00 ] 171.221.149.228 /index.php/Home//Api/getVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 AND `v_type_id` = 4 ORDER BY v_id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `longhai_video` WHERE `v_del` = 0 AND `v_type_id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-07-23T15:13:27+08:00 ] 182.120.169.2 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2017-07-23T15:13:27+08:00 ] 182.120.169.2 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0A8gY-eU77iSuO1Pb6h8LvY' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `longhai_member` (`m_openid`,`m_addtime`) VALUES ('o-9r-0A8gY-eU77iSuO1Pb6h8LvY','1500794007') [ RunTime:0.0004s ]
+
+[ 2017-07-23T15:39:08+08:00 ] 182.120.169.2 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2017-07-23T15:39:08+08:00 ] 182.120.169.2 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0A8gY-eU77iSuO1Pb6h8LvY' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-07-23T15:39:14+08:00 ] 182.120.169.2 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2017-07-23T15:39:15+08:00 ] 182.120.169.2 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0A8gY-eU77iSuO1Pb6h8LvY' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T16:28:24+08:00 ] 47.93.127.198 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000157s ]
+ERR: 非法操作:index
+
+[ 2017-07-23T18:43:17+08:00 ] 117.136.63.145 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000181s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0001s ]
+
+[ 2017-07-23T18:43:18+08:00 ] 117.136.63.145 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000194s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_openid` = 'o-9r-0DxbExZcP1W5EdaveuNPmnc' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-07-23T18:43:22+08:00 ] 117.136.63.145 /index.php/Home//Api/updateUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: UPDATE `longhai_member` SET `m_nickname`='A香榭国际 天使美甲美睫纹绣～佑佑',`m_avatarurl`='https://wx.qlogo.cn/mmopen/vi_32/yrRWiaj8ibD2AgeNHBQ00Xr0oGXxyLqWm7ia0samiaffWFJamxcp972zLiaCXRicaxp2zNhAOZ8EvgmWkqQpl2y4xicfQ/0' WHERE `m_id` = 44 [ RunTime:0.0002s ]
+
+[ 2017-07-23T18:43:28+08:00 ] 117.136.63.145 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 44 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-07-23T18:43:28+08:00 ] 117.136.63.145 /index.php/Home//Api/getVideoDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 44 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0004s ]
+SQL: UPDATE `longhai_video` SET `v_views`=v_views+1 WHERE `v_id` = 25 [ RunTime:0.0003s ]
+SQL: SELECT `v_id`,`v_title`,`v_pic`,`v_video`,`v_views`,`l_pic`,`l_name`,`vt_id` FROM `longhai_video` left JOIN longhai_video_type on longhai_video.v_type_id = longhai_video_type.vt_id left JOIN longhai_lecturer on longhai_video.v_lecturer_id = longhai_lecturer.l_id  WHERE `v_id` = '25' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_type_id` = 1 AND `v_id` <> '25' ORDER BY v_id desc LIMIT 6   [ RunTime:0.0003s ]
+
+[ 2017-07-23T18:51:24+08:00 ] 123.59.146.153 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+ERR: 非法操作:index
+
+[ 2017-07-23T18:55:31+08:00 ] 110.184.70.248 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000185s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 44 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T18:55:31+08:00 ] 110.184.70.248 /index.php/Home//Api/getVideoDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 44 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0007s ]
+SQL: UPDATE `longhai_video` SET `v_views`=v_views+1 WHERE `v_id` = 19 [ RunTime:0.0003s ]
+SQL: SELECT `v_id`,`v_title`,`v_pic`,`v_video`,`v_views`,`l_pic`,`l_name`,`vt_id` FROM `longhai_video` left JOIN longhai_video_type on longhai_video.v_type_id = longhai_video_type.vt_id left JOIN longhai_lecturer on longhai_video.v_lecturer_id = longhai_lecturer.l_id  WHERE `v_id` = '19' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_type_id` = 1 AND `v_id` <> '19' ORDER BY v_id desc LIMIT 6   [ RunTime:0.0004s ]
+
+[ 2017-07-23T18:55:51+08:00 ] 110.184.70.248 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000168s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 44 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T18:55:51+08:00 ] 110.184.70.248 /index.php/Home//Api/getVideoDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 44 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0005s ]
+SQL: UPDATE `longhai_video` SET `v_views`=v_views+1 WHERE `v_id` = 23 [ RunTime:0.0002s ]
+SQL: SELECT `v_id`,`v_title`,`v_pic`,`v_video`,`v_views`,`l_pic`,`l_name`,`vt_id` FROM `longhai_video` left JOIN longhai_video_type on longhai_video.v_type_id = longhai_video_type.vt_id left JOIN longhai_lecturer on longhai_video.v_lecturer_id = longhai_lecturer.l_id  WHERE `v_id` = '23' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_type_id` = 1 AND `v_id` <> '23' ORDER BY v_id desc LIMIT 6   [ RunTime:0.0003s ]
+
+[ 2017-07-23T18:58:15+08:00 ] 74.82.47.2 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+ERR: 非法操作:index
+
+[ 2017-07-23T19:12:55+08:00 ] 110.184.70.248 /index.php/Home//Api/getUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 44 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-07-23T19:12:56+08:00 ] 110.184.70.248 /index.php/Home//Api/getVideoDetail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000120s ]
+SQL: SHOW COLUMNS FROM `longhai_member` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `longhai_member` WHERE `m_id` = 44 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0006s ]
+SQL: UPDATE `longhai_video` SET `v_views`=v_views+1 WHERE `v_id` = 25 [ RunTime:0.0003s ]
+SQL: SELECT `v_id`,`v_title`,`v_pic`,`v_video`,`v_views`,`l_pic`,`l_name`,`vt_id` FROM `longhai_video` left JOIN longhai_video_type on longhai_video.v_type_id = longhai_video_type.vt_id left JOIN longhai_lecturer on longhai_video.v_lecturer_id = longhai_lecturer.l_id  WHERE `v_id` = '25' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_type_id` = 1 AND `v_id` <> '25' ORDER BY v_id desc LIMIT 6   [ RunTime:0.0003s ]
+
