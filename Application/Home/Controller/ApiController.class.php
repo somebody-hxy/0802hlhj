@@ -104,21 +104,29 @@ class ApiController extends Controller {
 	}
 	
 	//讲师风采
-	public function getLecturer(){
-		$curr = I('post.curr');
-		$num = 20;
-//		$list = M('lecturer')->where(array('l_del'=>0))->limit(($curr-1)*$num ,$num)->select();
-		$list = M('lecturer')->where(array('l_del'=>0))->order('l_id desc')->limit(($curr-1)*$num ,$num)->select();
-//		$model = M('lecturer')->where(array('l_del'=>0))->order('l_id desc')->limit(($curr-1)*$num ,$num)->select();
-		$count = M('lecturer')->where(array('l_del'=>0))->count();
-		if($list){
-//			$this->ajaxReturn(array('result_code'=>100,'message'=>'获取成功', 'data'=>array('list'=>$list, 'total'=>$count,'model'=>$model)));
-			$this->ajaxReturn(array('result_code'=>100,'message'=>'获取成功', 'data'=>array('list'=>$list, 'total'=>$count)));
-		}else{
-			$this->ajaxReturn(array('result_code'=>101,'message'=>'获取失败'));
-		}
-	}
-	
+    public function getLecturer(){
+        $curr = I('post.curr');
+        $num = 20;
+        $list = M('lecturer')->where(array('l_del'=>0))->order('l_id desc')->limit(($curr-1)*$num ,$num)->select();
+        $count = M('lecturer')->where(array('l_del'=>0))->count();
+        if($list){
+            $this->ajaxReturn(array('result_code'=>100,'message'=>'获取成功', 'data'=>array('list'=>$list, 'total'=>$count)));
+        }else{
+            $this->ajaxReturn(array('result_code'=>101,'message'=>'获取失败'));
+        }
+    }
+    //获取产品分类
+    public function getCategory(){
+        $curr = I('post.curr');
+        $num = 20;
+        $list = M('category')->where(array('c_del'=>0))->order('c_id desc')->limit(($curr-1)*$num ,$num)->select();
+        $count = M('category')->where(array('c_del'=>0))->count();
+        if($list){
+            $this->ajaxReturn(array('result_code'=>100,'message'=>'获取成功', 'data'=>array('list'=>$list, 'total'=>$count)));
+        }else{
+            $this->ajaxReturn(array('result_code'=>101,'message'=>'获取失败'));
+        }
+    }
 	//讲师详情
 	public function getLecturerDetail(){
 		$list = M('lecturer')->where(array('l_id'=>I('post.id')))->find();
@@ -197,4 +205,7 @@ class ApiController extends Controller {
 		}
 		
 	}
+	
+	
+	
 }
