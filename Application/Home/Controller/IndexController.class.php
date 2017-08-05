@@ -27,9 +27,10 @@ class IndexController extends Controller {
 	public function getIndex(){
 		$list1 = M('lecturer')->where(array('l_del'=>0))->order('l_id desc')->limit(10)->select();
 		$list2 = M('video')->where(array('v_del'=>0))->order('v_id desc')->limit(10)->select();
-		$list3 = M('lecturer')->where(array('l_del'=>0))->order('l_id desc')->limit(10,10)->select();
+		$list3 = M('category')->where(array('c_del'=>0))->order('c_id desc')->limit(10)->select();
+		$list4 = M('pic')->where(array('p_del'=>0))->order('p_id desc')->limit(10)->select();
 		if($list1 || $list2||$list3){
-			$this->ajaxReturn(array('result_code'=>100,'message'=>'获取成功', 'data'=>array('lecturer'=>$list1, 'card_category'=>$list3, 'video'=>$list2 )));
+			$this->ajaxReturn(array('result_code'=>100,'message'=>'获取成功', 'data'=>array('lecturer'=>$list1, 'card_category'=>$list3, 'video'=>$list2 ,'pic'=>$list4)));
 		}else{
 			$this->ajaxReturn(array('result_code'=>101,'message'=>'获取失败'));
 		}

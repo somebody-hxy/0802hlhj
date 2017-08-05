@@ -1,21 +1,32 @@
-<include file='Public/header' />
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="/Public/admin/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="/Public/layui/css/layui.css" rel="stylesheet" type="text/css" />
+	<script src="/Public/admin/js/jquery.min.js" language="JavaScript" ></script>
+	<script src="/Public/layui/layui.js" language="JavaScript" ></script>
+	<script type="text/javascript" charset="utf-8" src="/Public/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/Public/ueditor/ueditor.all.min.js"> </script>
+	<script type="text/javascript" charset="utf-8" src="/Public/ueditor/lang/zh-cn/zh-cn.js"></script>
+</head>
 
 <body>
 	<div class="place">
 	    <span>位置：</span>
 	    <ul class="placeul">
 		    <li>视频管理</li>
-		    <li>产品列表</li>
-		    <li>新增产品</li>
+		    <li>讲师列表</li>
+		    <li>新增讲师</li>
 	    </ul>
    </div>
     <div class="formbody">
-    	<div class="formtitle"><span>新增产品</span></div>
-	    <form action="{:U('add')}" method="post" class="layui-form">
+    	<div class="formtitle"><span>新增讲师</span></div>
+	    <form action="<?php echo U('add');?>" method="post" class="layui-form">
 	    	<input type="hidden" id="l_pic" name="l_pic" />
 			<div class="layui-form-item">
 				<div class="layui-inline">
-					<label class="layui-form-label">产品名称</label>
+					<label class="layui-form-label">讲师姓名</label>
 					<div class="layui-input-inline"><input type="text" name="l_name" lay-verify="required" class="layui-input"></div>
 				</div>
 			</div>
@@ -33,7 +44,7 @@
 		    </div>
 		    <div class="layui-form-item">
 				<div class="layui-inline">
-					<label class="layui-form-label">产品详情</label>
+					<label class="layui-form-label">讲师详情</label>
 					<div class="layui-input-inline">
 						<script id="editor" name="l_detail" type="text/plain"></script>
 				    	<script>var ue = UE.getEditor('editor');</script>
@@ -54,7 +65,7 @@
 layui.use(['form','upload'], function(){
 	//上传图片
     layui.upload({
-        url: "{:U('Base/upload')}" ,success: function(res){
+        url: "<?php echo U('Base/upload');?>" ,success: function(res){
             if(res.result_code==100){
                 $("#l_pic").val(res.file);
                 $("#pic").attr("src", res.file);

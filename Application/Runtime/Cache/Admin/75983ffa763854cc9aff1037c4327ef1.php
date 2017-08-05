@@ -1,4 +1,15 @@
-<include file='Public/header' />
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="/Public/admin/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="/Public/layui/css/layui.css" rel="stylesheet" type="text/css" />
+	<script src="/Public/admin/js/jquery.min.js" language="JavaScript" ></script>
+	<script src="/Public/layui/layui.js" language="JavaScript" ></script>
+	<script type="text/javascript" charset="utf-8" src="/Public/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/Public/ueditor/ueditor.all.min.js"> </script>
+	<script type="text/javascript" charset="utf-8" src="/Public/ueditor/lang/zh-cn/zh-cn.js"></script>
+</head>
 
 <body>
 	<div class="place">
@@ -11,14 +22,14 @@
    </div>
     <div class="formbody">
     	<div class="formtitle"><span>修改产品</span></div>
-	    <form action="{:U('edit')}" method="post" class="layui-form">
-	    	<input type="hidden" name="curr" value="{$curr}">
-	    	<input type="hidden" name="l_id" value="{$list.l_id}">
-	    	<input type="hidden" id="l_pic" name="l_pic" value="{$list.l_pic}" />
+	    <form action="<?php echo U('edit');?>" method="post" class="layui-form">
+	    	<input type="hidden" name="curr" value="<?php echo ($curr); ?>">
+	    	<input type="hidden" name="l_id" value="<?php echo ($list["l_id"]); ?>">
+	    	<input type="hidden" id="l_pic" name="l_pic" value="<?php echo ($list["l_pic"]); ?>" />
 			<div class="layui-form-item">
 				<div class="layui-inline">
 					<label class="layui-form-label">产品姓名</label>
-					<div class="layui-input-inline"><input type="text" name="l_name" value="{$list.l_name}" lay-verify="required" class="layui-input"></div>
+					<div class="layui-input-inline"><input type="text" name="l_name" value="<?php echo ($list["l_name"]); ?>" lay-verify="required" class="layui-input"></div>
 				</div>
 			</div>
 			<div class="layui-form-item">
@@ -30,14 +41,14 @@
 		    <div class="layui-form-item">
 		    	<div class="layui-inline">
 		            <label class="layui-form-label"></label>
-		            <div class="layui-input-inline"><img id="pic" src="{$list.l_pic}" style="max-width: 320px;max-height: 200px;" /></div>
+		            <div class="layui-input-inline"><img id="pic" src="<?php echo ($list["l_pic"]); ?>" style="max-width: 320px;max-height: 200px;" /></div>
 		        </div>
 		    </div>
 		    <div class="layui-form-item">
 				<div class="layui-inline">
 					<label class="layui-form-label">产品详情</label>
 					<div class="layui-input-inline">
-						<script id="editor" name="l_detail" type="text/plain">{$list.l_detail}</script>
+						<script id="editor" name="l_detail" type="text/plain"><?php echo ($list["l_detail"]); ?></script>
 				    	<script>var ue = UE.getEditor('editor');</script>
 					</div>
 				</div>
@@ -56,7 +67,7 @@
 layui.use(['form','upload'], function(){
 	//上传图片
     layui.upload({
-        url: "{:U('Base/upload')}" ,success: function(res){
+        url: "<?php echo U('Base/upload');?>" ,success: function(res){
             if(res.result_code==100){
                 $("#l_pic").val(res.file);
                 $("#pic").attr("src", res.file);

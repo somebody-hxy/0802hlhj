@@ -5,20 +5,20 @@
 	    <span>位置：</span>
 	    <ul class="placeul">
 		    <li>视频管理</li>
-		    <li>产品列表</li>
-		    <li>修改产品</li>
+		    <li>图片列表</li>
+		    <li>修改图片</li>
 	    </ul>
    </div>
     <div class="formbody">
-    	<div class="formtitle"><span>修改产品</span></div>
+    	<div class="formtitle"><span>修改图片</span></div>
 	    <form action="{:U('edit')}" method="post" class="layui-form">
 	    	<input type="hidden" name="curr" value="{$curr}">
-	    	<input type="hidden" name="l_id" value="{$list.l_id}">
-	    	<input type="hidden" id="l_pic" name="l_pic" value="{$list.l_pic}" />
+	    	<input type="hidden" name="p_id" value="{$list.p_id}">
+	    	<input type="hidden" id="p_pic" name="l_pic" value="{$list.p_pic}" />
 			<div class="layui-form-item">
 				<div class="layui-inline">
-					<label class="layui-form-label">产品姓名</label>
-					<div class="layui-input-inline"><input type="text" name="l_name" value="{$list.l_name}" lay-verify="required" class="layui-input"></div>
+					<label class="layui-form-label">图片名称</label>
+					<div class="layui-input-inline"><input type="text" name="p_name" value="{$list.p_name}" lay-verify="required" class="layui-input"></div>
 				</div>
 			</div>
 			<div class="layui-form-item">
@@ -30,14 +30,14 @@
 		    <div class="layui-form-item">
 		    	<div class="layui-inline">
 		            <label class="layui-form-label"></label>
-		            <div class="layui-input-inline"><img id="pic" src="{$list.l_pic}" style="max-width: 320px;max-height: 200px;" /></div>
+		            <div class="layui-input-inline"><img id="pic" src="{$list.p_pic}" style="max-width: 320px;max-height: 200px;" /></div>
 		        </div>
 		    </div>
 		    <div class="layui-form-item">
 				<div class="layui-inline">
-					<label class="layui-form-label">产品详情</label>
+					<label class="layui-form-label">图片详情</label>
 					<div class="layui-input-inline">
-						<script id="editor" name="l_detail" type="text/plain">{$list.l_detail}</script>
+						<script id="editor" name="p_detail" type="text/plain">{$list.p_detail}</script>
 				    	<script>var ue = UE.getEditor('editor');</script>
 					</div>
 				</div>
@@ -58,7 +58,7 @@ layui.use(['form','upload'], function(){
     layui.upload({
         url: "{:U('Base/upload')}" ,success: function(res){
             if(res.result_code==100){
-                $("#l_pic").val(res.file);
+                $("#p_pic").val(res.file);
                 $("#pic").attr("src", res.file);
             }
         }

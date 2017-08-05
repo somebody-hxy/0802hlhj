@@ -5,7 +5,7 @@
     	<span>位置：</span>
 	    <ul class="placeul">
 		    <li>视频管理</li>
-		    <li>产品列表</li>
+		    <li>图片列表</li>
 	    </ul>
     </div>
     
@@ -19,17 +19,17 @@
 	    	<thead>
 		    	<tr>
 		        <th>编号</th>
-		        <th>产品名称</th>
+		        <th>图片名称</th>
 		        <th>操作</th>
 		        </tr>
 	        </thead>
 	        <tbody>
 	        	<foreach name="list" item="v">
 		        <tr>
-			        <td>{$v.l_id}</td>
-			        <td>{$v.l_name}</td>
+			        <td>{$v.p_id}</td>
+			        <td>{$v.p_name}</td>
 			        <td>
-			        	<a href="{:U('edit?id='.$v['l_id'].'&curr='.$page['curr'].'')}" class="tablelink1">修改</a>     
+			        	<a href="{:U('edit?id='.$v['p_id'].'&curr='.$page['curr'].'')}" class="tablelink1">修改</a>
 			        	<a class="tablelink2 del">删除</a>
 			        </td>
 		        </tr> 

@@ -127,6 +127,18 @@ class ApiController extends Controller {
             $this->ajaxReturn(array('result_code'=>101,'message'=>'获取失败'));
         }
     }
+	//获取图片展示
+	public function getPic(){
+		$curr = I('post.curr');
+		$num = 20;
+		$list = M('pic')->where(array('p_del'=>0))->order('p_id desc')->limit(($curr-1)*$num ,$num)->select();
+		$count = M('pic')->where(array('p_del'=>0))->count();
+		if($list){
+			$this->ajaxReturn(array('result_code'=>100,'message'=>'获取成功', 'data'=>array('list'=>$list, 'total'=>$count)));
+		}else{
+			$this->ajaxReturn(array('result_code'=>101,'message'=>'获取失败'));
+		}
+	}
 	//讲师详情
 	public function getLecturerDetail(){
 		$list = M('lecturer')->where(array('l_id'=>I('post.id')))->find();
