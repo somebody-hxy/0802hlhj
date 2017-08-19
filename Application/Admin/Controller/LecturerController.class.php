@@ -20,7 +20,7 @@ class LecturerController extends BaseController {
 			$data['l_pic'] = I('post.l_pic');
 			$data['l_detail'] = htmlspecialchars_decode(I('post.l_detail'));
 			$data['l_del'] = 0;
-			
+			dump($data);exit;
 			$result = M('lecturer')->add($data);
 			$this->checkResult($result, U('index'));
 		}else{

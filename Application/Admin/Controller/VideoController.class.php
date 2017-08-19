@@ -27,7 +27,7 @@ class VideoController extends BaseController {
 			$data['v_views'] = 0;
 			$data['v_addtime'] = time();
 			$data['v_del'] = 0;
-			
+			//dump($data);exit;
 			$result = M('video')->add($data);
 			$this->checkResult($result, U('index'));
 		}else{

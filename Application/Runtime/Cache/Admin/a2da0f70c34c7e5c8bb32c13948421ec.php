@@ -16,24 +16,49 @@
 	    <span>位置：</span>
 	    <ul class="placeul">
 		    <li>视频管理</li>
-		    <li>产品列表</li>
-		    <li>新增产品</li>
+		    <li>视频分类</li>
+		    <li>新增视频</li>
 	    </ul>
    </div>
     <div class="formbody">
-    	<div class="formtitle"><span>新增产品</span></div>
+    	<div class="formtitle"><span>新增视频</span></div>
 	    <form action="<?php echo U('add');?>" method="post" class="layui-form">
-	    	<input type="hidden" id="l_pic" name="l_pic" />
+	    	<input type="hidden" id="v_pic" name="v_pic" />
+	    	<input type="hidden" id="v_video" name="v_video" />
+	    	<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">选择分类</label>
+					<div class="layui-input-inline">
+						<select name="v_type_id">
+							<?php if(is_array($type)): foreach($type as $key=>$v): ?><option value="<?php echo ($v["vt_id"]); ?>"><?php echo ($v["vt_name"]); ?></option><?php endforeach; endif; ?>
+						</select>
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">选择讲师</label>
+					<div class="layui-input-inline">
+						<select name="v_lecturer_id">
+							<?php if(is_array($lecturer)): foreach($lecturer as $key=>$v): ?><option value="<?php echo ($v["l_id"]); ?>"><?php echo ($v["l_name"]); ?></option><?php endforeach; endif; ?>
+						</select>
+					</div>
+				</div>
+			</div>
 			<div class="layui-form-item">
 				<div class="layui-inline">
-					<label class="layui-form-label">产品名称</label>
-					<div class="layui-input-inline"><input type="text" name="l_name" lay-verify="required" class="layui-input"></div>
+					<label class="layui-form-label">视频名称</label>
+					<div class="layui-input-inline"><input type="text" name="v_title" lay-verify="required" class="layui-input"></div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">上传视频</label>
+		            <div class="layui-input-inline" style="width: 105px;"><input id="upload_video" type="file" name="upload_video" class="layui-upload-file"></div>
+		            <div id="video" class="layui-form-mid layui-word-aux"></div>
 				</div>
 			</div>
 			<div class="layui-form-item">
 				<div class="layui-inline">
 					<label class="layui-form-label">上传图片</label>
-		            <div class="layui-input-inline"><input type="file" name="upload_pic" class="layui-upload-file"></div>
+		            <div class="layui-input-inline" style="width: 105px;"><input id="upload_pic" type="file" name="upload_pic" class="layui-upload-file"></div>
+		            <div class="layui-form-mid layui-word-aux"></div>
 				</div>
 			</div>
 		    <div class="layui-form-item">
@@ -42,15 +67,6 @@
 		            <div class="layui-input-inline"><img id="pic" src="" style="max-width: 320px;max-height: 200px;" /></div>
 		        </div>
 		    </div>
-		    <div class="layui-form-item">
-				<div class="layui-inline">
-					<label class="layui-form-label">产品详情</label>
-					<div class="layui-input-inline">
-						<script id="editor" name="l_detail" type="text/plain"></script>
-				    	<script>var ue = UE.getEditor('editor');</script>
-					</div>
-				</div>
-			</div>
 			<div class="layui-form-item">
 	            <div class="layui-input-block">
 	                <button class="layui-btn layui-btn-small layui-btn-normal" lay-submit  lay-filter="sub">确认保存</button>
@@ -63,16 +79,30 @@
 </html>
 <script>
 layui.use(['form','upload'], function(){
+	//上传视频
+	layui.upload({
+        elem:'#upload_video', title:"上传视频", ext:'mp4',
+        url:"<?php echo U('Video/uploadVideo');?>",
+        before: function(input){
+        	//alert(11);
+        },
+        success:function(res){
+        	if(res.result_code==100){
+        		$("#v_video").val(res.file);
+        		$("#video").html(res.file);
+            }
+        }
+   });
 	//上传图片
     layui.upload({
+    	elem: "#upload_pic", 
         url: "<?php echo U('Base/upload');?>" ,success: function(res){
             if(res.result_code==100){
-                $("#l_pic").val(res.file);
+                $("#v_pic").val(res.file);
                 $("#pic").attr("src", res.file);
             }
         }
     });
-    
     var form = layui.form();
 	form.on('submit(sub)', function(data){
         

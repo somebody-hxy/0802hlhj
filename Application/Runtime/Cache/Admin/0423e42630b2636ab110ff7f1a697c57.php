@@ -16,21 +16,21 @@
 	    <span>位置：</span>
 	    <ul class="placeul">
 		    <li>视频管理</li>
-		    <li>产品列表</li>
-		    <li>新增产品</li>
+		    <li>视频分类</li>
+		    <li>新增分类</li>
 	    </ul>
    </div>
     <div class="formbody">
-    	<div class="formtitle"><span>新增产品</span></div>
+    	<div class="formtitle"><span>新增分类</span></div>
 	    <form action="<?php echo U('add');?>" method="post" class="layui-form">
-	    	<input type="hidden" id="l_pic" name="l_pic" />
+	    	<!--<input type="hidden" id="vt_pic" name="vt_pic" />-->
 			<div class="layui-form-item">
 				<div class="layui-inline">
-					<label class="layui-form-label">产品名称</label>
-					<div class="layui-input-inline"><input type="text" name="l_name" lay-verify="required" class="layui-input"></div>
+					<label class="layui-form-label">分类名称</label>
+					<div class="layui-input-inline"><input type="text" name="vt_name" lay-verify="required" class="layui-input"></div>
 				</div>
 			</div>
-			<div class="layui-form-item">
+			<!--<div class="layui-form-item">
 				<div class="layui-inline">
 					<label class="layui-form-label">上传图片</label>
 		            <div class="layui-input-inline"><input type="file" name="upload_pic" class="layui-upload-file"></div>
@@ -41,16 +41,7 @@
 		            <label class="layui-form-label"></label>
 		            <div class="layui-input-inline"><img id="pic" src="" style="max-width: 320px;max-height: 200px;" /></div>
 		        </div>
-		    </div>
-		    <div class="layui-form-item">
-				<div class="layui-inline">
-					<label class="layui-form-label">产品详情</label>
-					<div class="layui-input-inline">
-						<script id="editor" name="l_detail" type="text/plain"></script>
-				    	<script>var ue = UE.getEditor('editor');</script>
-					</div>
-				</div>
-			</div>
+		    </div>-->
 			<div class="layui-form-item">
 	            <div class="layui-input-block">
 	                <button class="layui-btn layui-btn-small layui-btn-normal" lay-submit  lay-filter="sub">确认保存</button>
@@ -64,14 +55,14 @@
 <script>
 layui.use(['form','upload'], function(){
 	//上传图片
-    layui.upload({
-        url: "<?php echo U('Base/upload');?>" ,success: function(res){
-            if(res.result_code==100){
-                $("#l_pic").val(res.file);
-                $("#pic").attr("src", res.file);
-            }
-        }
-    });
+//  layui.upload({
+//      url: "<?php echo U('Base/upload');?>" ,success: function(res){
+//          if(res.result_code==100){
+//              $("#vt_pic").val(res.file);
+//              $("#pic").attr("src", res.file);
+//          }
+//      }
+//  });
     
     var form = layui.form();
 	form.on('submit(sub)', function(data){

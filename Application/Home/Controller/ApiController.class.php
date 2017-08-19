@@ -13,14 +13,14 @@ class ApiController extends Controller {
     //更新会员信息
     public function updateUserInfo(){
     	$data['m_id'] = session('memberid');
-	  	$data['m_nickname'] = I('post.nickName');
-	    $data['m_avatarurl'] = I('post.avatarUrl');
-	    $result = M('member')->save($data);
-	    if($result!==false){
-	    	$this->ajaxReturn(array('result_code'=>100,'message'=>'操作成功'));
-	    }else{
-	    	$this->ajaxReturn(array('result_code'=>101,'message'=>'操作失败'));
-	    }
+		$data['m_nickname'] = I('post.nickName');
+		$data['m_avatarurl'] = I('post.avatarUrl');
+		$result = M('member')->save($data);
+		if($result!==false){
+			$this->ajaxReturn(array('result_code'=>100,'message'=>'操作成功'));
+		}else{
+			$this->ajaxReturn(array('result_code'=>101,'message'=>'操作失败'));
+		}
 	}
 	
 	//用户中心
@@ -148,7 +148,15 @@ class ApiController extends Controller {
 			$this->ajaxReturn(array('result_code'=>101,'message'=>'获取失败'));
 		}
 	}
-	
+	//图片详情
+	public function getPicDetail(){
+		$list = M('pic')->where(array('p_id'=>I('post.id')))->find();
+		if($list){
+			$this->ajaxReturn(array('result_code'=>100,'message'=>'获取成功', 'data'=>array('list'=>$list)));
+		}else{
+			$this->ajaxReturn(array('result_code'=>101,'message'=>'获取失败'));
+		}
+	}
 	//视频分类
 	public function getVideo(){
 		$where['v_del'] = 0;
